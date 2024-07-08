@@ -324,7 +324,7 @@ const HighlightsSection = () => {
       >
         <Text color="muted" fontSize="lg">
           We took care of all your backend functionalities, so you can focus on
-          what's important: talking to your documents.
+          what&aposs important: talking to your documents.
         </Text>
         <Wrap mt="8">
           {[
