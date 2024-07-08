@@ -1,33 +1,30 @@
 import { HStack, Text } from '@chakra-ui/react'
 
 export default {
-  title: 'Pricing for every stage',
+  title: 'Fair Pricing for everyone',
   description:
-    'Pay once and get life-time access to our high quality components.',
+    'Our Prices ensure that DataCube stays affordable for everyone.',
   plans: [
     {
       id: 'oss',
-      title: 'Open Source',
+      title: 'Starter Plan',
       description: 'Basic compoents, perfect to get started.',
       price: 'Free',
       features: [
         {
-          title: 'MIT License',
+          title: '10 Documents Synthesis',
         },
         {
-          title: 'Authentication (Clerk/Supabase/Magic)',
+          title: 'Document Summarization',
         },
         {
-          title: 'Form (react-hook-form)',
+          title: 'AI dialogue, up to 20 Questions',
         },
         {
-          title: 'Modals manager',
+          title: '20 MBS Documents storage',
         },
         {
-          title: 'Hotkeys',
-        },
-        {
-          title: 'Web3 components',
+          title: 'Document Tags',
         },
         {
           title: 'And much more...',
@@ -39,31 +36,28 @@ export default {
     },
     {
       id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
+      title: 'Professional Plan',
+      description: 'Complete document uploads and synthesis.',
+      price: (<Text>€10 / month</Text>),
       isRecommended: true,
       features: [
         {
-          title: 'One project',
+          title: 'Unlimited Document uploads',
         },
         {
-          title: 'One developer',
+          title: 'Document Summarization',
         },
         {
-          title: 'Advanced components',
+          title: 'Unlimited AI queries',
         },
         {
-          title: 'Multiple themes',
+          title: '100 MBS Documents Storage',
         },
         {
-          title: 'Next.js and Electron boilerplates',
+          title: 'Document Tags',
         },
         {
-          title: 'Private discord community',
-        },
-        {
-          title: '1 year of updates',
+          title: 'Private slack community',
         },
         null,
         {
@@ -77,32 +71,30 @@ export default {
     },
     {
       id: 'startup',
-      title: 'Startup',
+      title: 'Enterprise Plan',
       description: 'Unlimited license for growing teams.',
       price: (
         <HStack>
-          <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
-          </Text>
-          <Text>€499,-</Text>
+          
+          <Text>Custom Pricing</Text>
         </HStack>
       ),
       features: [
         {
-          title: 'Unlimited projects',
+          title: 'Unlimited Document Uploads',
         },
         {
-          title: 'Unlimited developers',
+          title: 'Document Summarization',
         },
         {
-          title: '1 year of updates',
+          title: 'Custom AI queries',
         },
         {
-          title: 'Everything from Bootstrap',
+          title: 'Custom Documents storage',
         },
         null,
         {
-          title: 'Private beta access',
+          title: 'Private domain server',
           iconColor: 'green.500',
         },
       ],

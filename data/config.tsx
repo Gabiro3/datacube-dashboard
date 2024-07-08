@@ -4,12 +4,12 @@ import { NextSeoProps } from 'next-seo'
 import { FaGithub, FaTwitter } from 'react-icons/fa'
 import { FiCheck } from 'react-icons/fi'
 import { Logo } from './logo'
-
+const currentYear = new Date().getFullYear();
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'DataCube AI',
+    description: 'Talk to your Documents Now',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
@@ -41,8 +41,8 @@ const siteConfig = {
   footer: {
     copyright: (
       <>
-        Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        Copyright © {currentYear}{' '}
+        <Link href="">DataCube AI</Link>
       </>
     ),
     links: [

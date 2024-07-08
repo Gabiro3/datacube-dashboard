@@ -24,7 +24,6 @@ import { FallInPlace } from "components/motion/fall-in-place";
 import { Hero } from "components/hero";
 import { Link, Br } from "@saas-ui/react";
 import { Em } from "components/typography";
-import { NextjsLogo, ChakraLogo } from "components/logos";
 import {
   FiArrowRight,
   FiBox,
@@ -39,9 +38,10 @@ import {
   FiSmile,
   FiTerminal,
   FiThumbsUp,
-  FiToggleLeft,
+  FiFileText,
   FiTrendingUp,
   FiUserPlus,
+  FiCloud
 } from "react-icons/fi";
 import { Features } from "components/features";
 import { BackgroundGradient } from "components/gradients/background-gradient";
@@ -65,8 +65,8 @@ const Home: NextPage = () => {
   return (
     <Box>
       <SEO
-        title="Saas UI Landingspage"
-        description="Free SaaS landingspage starter kit"
+        title="DataCube AI"
+        description="Free AI Document Management System"
       />
       <Box>
         <HeroSection />
@@ -97,21 +97,56 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                AI that lets you Talk
+                <Br /> To your Documents
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{" "}
-                build intuitive SaaS products with speed.
+                DataCube provides <Em>AI-powered tools</Em>
+                <Br /> that allow you to gain insights from your Documents{" "}
+                <Br /> in real-time without hassle.
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
               <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
+                <Image
+                  src="/static/images/excel-svgrepo-com.svg"
+                  layout="fixed"
+                  width={25}
+                  height={25}
+                  alt="Microsoft Excel Logo svg"
+                  quality="75"
+                  priority
+                />
+                <Image
+                  src="/static/images/ms-word-svgrepo-com.svg"
+                  layout="fixed"
+                  width={25}
+                  height={25}
+                  alt="Microsoft Word logo svg"
+                  quality="75"
+                  priority
+                />
+                <Image
+                  src="/static/images/ms-onenote-svgrepo-com.svg"
+                  layout="fixed"
+                  width={25}
+                  height={25}
+                  alt="Microsoft OneNote Logo svg"
+                  quality="75"
+                  priority
+                />
+                <Image
+                  src="/static/images/pdf-svgrepo-com.svg"
+                  layout="fixed"
+                  width={25}
+                  height={25}
+                  alt="Pdf Logo svg"
+                  quality="75"
+                  priority
+                />
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
@@ -156,7 +191,7 @@ const HeroSection: React.FC = () => {
                   layout="fixed"
                   width={1200}
                   height={762}
-                  alt="Screenshot of a ListPage in Saas UI Pro"
+                  alt="Screenshot of DataCube Dashboard"
                   quality="75"
                   priority
                 />
@@ -174,17 +209,17 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: "Accessible",
+            title: "Easy to Use",
             icon: FiSmile,
-            description: "All components strictly follow WAI-ARIA standards.",
+            description: "DataCube is built with an intuitive and easy to use interface.",
             iconPosition: "left",
             delay: 0.6,
           },
           {
-            title: "Themable",
+            title: "Integrated",
             icon: FiSliders,
             description:
-              "Fully customize all components to your brand with theme support and style props.",
+              "Get AI integrated into your documents without hassle.",
             iconPosition: "left",
             delay: 0.8,
           },
@@ -192,7 +227,7 @@ const HeroSection: React.FC = () => {
             title: "Composable",
             icon: FiGrid,
             description:
-              "Compose components to fit your needs and mix them together to create new ones.",
+              "You can Ask Questions and get answers right away!",
             iconPosition: "left",
             delay: 1,
           },
@@ -200,7 +235,7 @@ const HeroSection: React.FC = () => {
             title: "Productive",
             icon: FiThumbsUp,
             description:
-              "Designed to reduce boilerplate and fully typed, build your product at speed.",
+              "This is a new way to synthesize documents, and it works!",
             iconPosition: "left",
             delay: 1.1,
           },
@@ -219,48 +254,58 @@ const HighlightsSection = () => {
       <HighlightsItem colSpan={[1, null, 2]} title="Core components">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+            Get started with DataCube by <Em>Creating an Account</Em>.
+            After creating an account, you will be able to upload your own documents
+            to the platform, get AI-powered insights from them and <Em>ask questions about </Em> 
+             the information stored in them.
           </Text>
 
-          <Flex
-            rounded="full"
-            borderWidth="1px"
-            flexDirection="row"
-            alignItems="center"
-            py="1"
-            ps="8"
-            pe="2"
-            bg="primary.900"
-            _dark={{ bg: "gray.900" }}
-          >
-            <Box>
-              <Text color="yellow.400" display="inline">
-                yarn add
-              </Text>{" "}
-              <Text color="cyan.300" display="inline">
-                @saas-ui/react
-              </Text>
-            </Box>
-            <IconButton
-              icon={hasCopied ? <FiCheck /> : <FiCopy />}
-              aria-label="Copy install command"
-              onClick={onCopy}
-              variant="ghost"
-              ms="4"
-              isRound
-              color="white"
-            />
-          </Flex>
+              <HStack pt="4" pb="5" spacing="8">
+                <Image
+                  src="/static/images/ms-word-svgrepo-com.svg"
+                  layout="fixed"
+                  width={30}
+                  height={30}
+                  alt="Microsoft Word Logo svg"
+                  quality="75"
+                  priority
+                />
+                <Image
+                  src="/static/images/pdf-svgrepo-com.svg"
+                  layout="fixed"
+                  width={30}
+                  height={30}
+                  alt="Pdf logo svg"
+                  quality="75"
+                  priority
+                />
+                <Image
+                  src="/static/images/excel-svgrepo-com.svg"
+                  layout="fixed"
+                  width={30}
+                  height={30}
+                  alt="Microsoft Excel logo"
+                  quality="75"
+                  priority
+                />
+                <Image
+                  src="/static/images/ms-onenote-svgrepo-com.svg"
+                  layout="fixed"
+                  width={30}
+                  height={30}
+                  alt="Microsoft OneNote logo"
+                  quality="75"
+                  priority
+                />
+              </HStack>
+          
         </VStack>
       </HighlightsItem>
       <HighlightsItem title="Solid foundations">
         <Text color="muted" fontSize="lg">
           We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+          selected the most advanced and established AI tools in the scene to help
+          you get the most out of you documents.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
@@ -275,27 +320,27 @@ const HighlightsSection = () => {
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
-        title="Start your next idea two steps ahead"
+        title="Multiple Documents Supported"
       >
         <Text color="muted" fontSize="lg">
-          We took care of all your basic frontend needs, so you can start
-          building functionality that makes your product unique.
+          We took care of all your backend functionalities, so you can focus on
+          what's important: talking to your documents.
         </Text>
         <Wrap mt="8">
           {[
-            "authentication",
-            "navigation",
-            "crud",
-            "settings",
-            "multi-tenancy",
-            "layouts",
-            "billing",
-            "a11y testing",
-            "server-side rendering",
-            "documentation",
-            "onboarding",
+            "essays",
+            "contracts",
+            "reports",
+            "letters",
+            "excel sheets",
+            "invoices",
+            "billing reports",
+            "testing records",
+            "speeches",
+            "documentations",
+            "announcements",
             "storybooks",
-            "theming",
+            "transcripts",
             "upselling",
             "unit testing",
             "feature flags",
@@ -328,16 +373,15 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          Not your average
+          AI docmaster.
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
+          Typical AI docmasters are either too complex or filled with ads.
           <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          DocuBite AI is easy to use, and No! we don&apos;t do ads.
         </>
       }
       align="left"
@@ -345,71 +389,46 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: "Components.",
-          icon: FiBox,
-          description:
-            "All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.",
-          variant: "inline",
-        },
-        {
-          title: "Starterkits.",
+          title: "Secure.",
           icon: FiLock,
           description:
-            "Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.",
+            "DataCube safely secures your documents privacy and we don't store our user's data, you own your own data.",
           variant: "inline",
         },
         {
-          title: "Documentation.",
+          title: "Search.",
           icon: FiSearch,
           description:
-            "Extensively documented, including storybooks, best practices, use-cases and examples.",
+            "We make documents search soo easy and straighforward, just use our advanced AI-powered DocuSearch feature.",
           variant: "inline",
         },
+
         {
-          title: "Onboarding.",
-          icon: FiUserPlus,
-          description:
-            "Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.",
-          variant: "inline",
-        },
-        {
-          title: "Feature flags.",
+          title: "Document Tags.",
           icon: FiFlag,
           description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
+            "Each document is flagged with key features from it. Document tags allow for easy classification and documents retrieval.",
           variant: "inline",
         },
         {
-          title: "Upselling.",
+          title: "Excel.",
           icon: FiTrendingUp,
           description:
-            "Components and hooks for upgrade flows designed to make upgrading inside your app frictionless.",
+            "Having a tool that lets you talk to your documents is crucial for your personal and professional development.",
           variant: "inline",
         },
         {
-          title: "Themes.",
-          icon: FiToggleLeft,
+          title: "File Store.",
+          icon: FiCloud,
           description:
-            "Includes multiple themes with darkmode support, always have the perfect starting point for your next project.",
+            "Our cloud storage solution offers file access and storage directly from the cloud, your documents are safe.",
           variant: "inline",
         },
         {
-          title: "Generators.",
-          icon: FiTerminal,
-          description:
-            "Extend your design system while maintaininig code quality and consistency with built-in generators.",
-          variant: "inline",
-        },
-        {
-          title: "Monorepo.",
-          icon: FiCode,
-          description: (
-            <>
-              All code is available as packages in a high-performance{" "}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
-            </>
-          ),
+          title: "Summarise.",
+          icon: FiFileText,
+          description: "Summarise information in your documents and extract key information from them.",
+          
           variant: "inline",
         },
       ]}
@@ -425,7 +444,7 @@ const TestimonialsSection = () => {
 
         return columns;
       },
-      [[], [], []]
+      [[], [], []],
     );
   }, []);
 
@@ -468,7 +487,7 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: "Support us by becoming a stargazer! 🚀 ",
+        title: "We are going live this Friday, Join Us 🚀 ",
         description:
           '<img src="https://img.shields.io/github/stars/saas-js/saas-ui.svg?style=social&label=Star" />',
         href: "https://github.com/saas-js/saas-ui",
