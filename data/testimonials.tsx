@@ -2,39 +2,36 @@ export default {
   title: 'Loved by tech people',
   items: [
     {
-      name: 'Eelco Wiersma',
-      description: 'Founder Saas UI',
-      avatar:
-        'https://pbs.twimg.com/profile_images/1470742164024008706/k-eXHtu0_normal.jpg',
-      children: (
-        <>
-          “With SaaS UI I am able to produce high quality dashboard apps and
-          internal tools without a lot of design skills. The ROI really is
-          amazing.”
-        </>
-      ),
-    },
-    {
-      name: 'Caroline Yahaya',
-      description: 'Fullstack Developer',
-      avatar: '/static/images/avatar2.jpg',
-      children: (
-        <>
-          “Saas UI allows me to build beautiful and functional UI super fast.
-          The components are very well thought out and the Next.js starter kit
-          saved me at least 100 hours of work.”
-        </>
-      ),
-    },
-    {
-      name: 'Alberto Vazquez',
+      name: 'Patrick Ikuzwe',
       description: 'Frontend Engineer',
       avatar: '/static/images/avatar3.jpg',
       children: (
         <>
-          “Saas UI gave us a perfect starting point for our project, having the
-          storybooks already set up with beautifully crafted components and
-          fully mocked pages was a treat.”
+          “There's nothing more relieving for a developer than an automation tool that boosts your productivity without undermining efficiency and Ireme does just that.”
+        </>
+      ),
+    },
+    {
+      name: 'Sarah Jones',
+      description: 'Content Creator',
+      avatar: '/static/images/avatar4.jpg',
+      children: (
+        <>
+          “Ireme AI has revolutionized the way I work with documents. I can
+          quickly read, summarize, and understand information, saving me
+          hours of time.”
+        </>
+      ),
+    },
+    {
+      name: 'David Lee',
+      description: 'Student',
+      avatar: '/static/images/avatar5.jpg',
+      children: (
+        <>
+          “As a student, Ireme AI has been a lifesaver. I can easily
+          understand complex academic texts like research papers and essays and quickly find the key
+          information I need.”
         </>
       ),
     },

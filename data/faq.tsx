@@ -1,32 +1,68 @@
-import * as React from 'react'
+import * as React from 'react';
 
 const faq = {
-  title: 'Frequently asked questions',
-  // description: '',
+  title: 'Frequently Asked Questions',
   items: [
     {
-      q: 'How many products can I use Saas UI Pro for?',
+      q: 'How do I start using Ireme AI software?',
       a: (
         <>
-          The single license can be used for one commercial application or SaaS
-          product and unlimited internal tools. You can buy as many licenses as
-          you need. <br /> The unlimited license does not have any restrictions.
+          Simply create an account, upload your documents, and start interacting
+          with them using AI. The system will help you read and summarize your
+          documents effectively.
         </>
       ),
     },
     {
-      q: 'Can I use Saas UI Pro for client work?',
-      a: "Yes, that's totally up to you, as long as it fits the license you purchase.",
+      q: 'Is my data secure while using Ireme?',
+      a: (
+        <>
+          Yes, your data is secure. We use advanced encryption and security
+          protocols to ensure your documents and interactions are protected.
+        </>
+      ),
     },
     {
-      q: 'Can I use Saas UI Pro for Open Source projects?',
-      a: 'No currently not. A large part of Saas UI is already released under MIT license. We try to give back to the community as much as possible.',
+      q: 'What types of documents can I upload?',
+      a: (
+        <>
+          You can upload a variety of document types, including PDFs, Word
+          documents, and text files. Our AI is designed to handle a wide range
+          of formats.
+        </>
+      ),
     },
     {
-      q: 'Does Saas UI include Figma, Sketch or other design files?',
-      a: 'No, Saas UI does not include any design assets. Maintaining design resources costs a lot of extra effort. We believe small teams can move much faster by designing directly in code, with help of Storybooks.',
+      q: 'Can I use Ireme AI for multiple projects?',
+      a: (
+        <>
+          Yes, you can use the software for as many projects as you need. There
+          are no restrictions on the number of projects you can work on.
+        </>
+      ),
+    },
+    {
+      q: 'Is there a limit to the number of documents I can upload?',
+      a: (
+        <>
+          Our software does not impose strict limits on the number of documents
+          you can upload. However, fair usage policies apply to ensure optimal
+          performance for all users.
+        </>
+      ),
+    },
+    {
+      q: 'Can I share summarized documents with others?',
+      a: (
+        <>
+          Yes, you can easily share summarized documents with others. Our
+          platform provides sharing options to collaborate and distribute
+          summaries.
+        </>
+      ),
     },
   ],
-}
+};
 
-export default faq
+export default faq;
+

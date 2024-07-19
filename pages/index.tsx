@@ -65,8 +65,8 @@ const Home: NextPage = () => {
   return (
     <Box>
       <SEO
-        title="DataCube AI"
-        description="Free AI Document Management System"
+        title="Ireme AI | Rwanda's First AI Docmaster"
+        description="Rwanda&aposs First AI Document Management System"
       />
       <Box>
         <HeroSection />
@@ -103,7 +103,7 @@ const HeroSection: React.FC = () => {
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                DataCube provides <Em>AI-powered tools</Em>
+                Ireme provides <Em>AI-powered tools</Em>
                 <Br /> that allow you to gain insights from your Documents{" "}
                 <Br /> in real-time without hassle.
               </FallInPlace>
@@ -211,7 +211,7 @@ const HeroSection: React.FC = () => {
           {
             title: "Easy to Use",
             icon: FiSmile,
-            description: "DataCube is built with an intuitive and easy to use interface.",
+            description: "Ireme is built with an intuitive and easy to use interface.",
             iconPosition: "left",
             delay: 0.6,
           },
@@ -254,7 +254,7 @@ const HighlightsSection = () => {
       <HighlightsItem colSpan={[1, null, 2]} title="Core components">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started with DataCube by <Em>Creating an Account</Em>.
+            Get started with Ireme AI by <Em>Creating an Account</Em>.
             After creating an account, you will be able to upload your own documents
             to the platform, get AI-powered insights from them and <Em>ask questions about </Em> 
              the information stored in them.
@@ -309,14 +309,12 @@ const HighlightsSection = () => {
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
-        name="Renata Alink"
-        description="Founder"
+        name="Ghislain Shema"
+        description="Software Developer"
         avatar="/static/images/avatar.jpg"
         gradient={["pink.200", "purple.500"]}
       >
-        “Saas UI helped us set up a beautiful modern UI in no time. It saved us
-        hundreds of hours in development time and allowed us to focus on
-        business logic for our specific use-case from the start.”
+        “Ireme AI helped me boost my productivity as a Software Developer. It allows me to quickly grasp the main points of developer guides, saving me time and effort in understanding new technologies.”
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
@@ -341,10 +339,10 @@ const HighlightsSection = () => {
             "announcements",
             "storybooks",
             "transcripts",
-            "upselling",
-            "unit testing",
-            "feature flags",
-            "responsiveness",
+            "user guides",
+            "white papers",
+            "case studies",
+            "research proposals",
           ].map((value) => (
             <Tag
               key={value}
@@ -381,7 +379,7 @@ const FeaturesSection = () => {
         <>
           Typical AI docmasters are either too complex or filled with ads.
           <Br />
-          DocuBite AI is easy to use, and No! we don&apos;t do ads.
+          Ireme AI is easy to use, and No! we don&apos;t do ads.
         </>
       }
       align="left"
@@ -392,7 +390,7 @@ const FeaturesSection = () => {
           title: "Secure.",
           icon: FiLock,
           description:
-            "DataCube safely secures your documents privacy and we don't store our user's data, you own your own data.",
+            "Ireme safely secures your documents privacy and we don't store our user's data, you own your own data.",
           variant: "inline",
         },
         {
@@ -487,10 +485,10 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: "We are going live this Friday, Join Us 🚀 ",
+        title: "We are going live this July, Join Us 🚀",
         description:
-          '<img src="https://img.shields.io/github/stars/saas-js/saas-ui.svg?style=social&label=Star" />',
-        href: "https://github.com/saas-js/saas-ui",
+          '<img src="https://cdn.prod.website-files.com/65e76a14af207274f46c7f0e/665dbf14c7f8d8e979b03ada_norrsken-logo-white.svg" width="88px" />',
+        href: "https://github.com",
         action: false,
       },
     },

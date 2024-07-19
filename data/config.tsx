@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'DataCube AI',
+    title: 'Ireme AI',
     description: 'Talk to your Documents Now',
   } as NextSeoProps,
   termsUrl: '#',
@@ -42,26 +42,26 @@ const siteConfig = {
     copyright: (
       <>
         Copyright © {currentYear}{' '}
-        <Link href="">DataCube AI</Link>
+        <Link href="">Ireme AI</Link>
       </>
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
+        href: 'mailto:iremeai@gmail.com',
         label: 'Contact',
       },
       {
-        href: 'https://twitter.com/saas_js',
+        href: 'https://twitter.com',
         label: <FaTwitter size="14" />,
       },
       {
-        href: 'https://github.com/saas-js/saas-ui',
+        href: 'https://github.com/',
         label: <FaGithub size="14" />,
       },
     ],
   },
   signup: {
-    title: 'Start building with Saas UI',
+    title: 'Start building with Ireme AI',
     features: [
       {
         icon: FiCheck,

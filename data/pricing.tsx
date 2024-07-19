@@ -9,7 +9,7 @@ export default {
       id: 'oss',
       title: 'Starter Plan',
       description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
+      price: (<Text>500 RWF / Document</Text>),
       features: [
         {
           title: '10 Documents Synthesis',
@@ -18,10 +18,10 @@ export default {
           title: 'Document Summarization',
         },
         {
-          title: 'AI dialogue, up to 20 Questions',
+          title: 'Ask AI, 3 questions per Doc',
         },
         {
-          title: '20 MBS Documents storage',
+          title: '5MBs MBS Documents storage',
         },
         {
           title: 'Document Tags',
@@ -38,17 +38,17 @@ export default {
       id: 'bootstrap',
       title: 'Professional Plan',
       description: 'Complete document uploads and synthesis.',
-      price: (<Text>€10 / month</Text>),
+      price: (<Text>50,000 RWF / month</Text>),
       isRecommended: true,
       features: [
         {
-          title: 'Unlimited Document uploads',
+          title: 'Up to 60 Document uploads',
         },
         {
           title: 'Document Summarization',
         },
         {
-          title: 'Unlimited AI queries',
+          title: '20 AI queries per Doc',
         },
         {
           title: '100 MBS Documents Storage',
@@ -91,6 +91,9 @@ export default {
         },
         {
           title: 'Custom Documents storage',
+        },
+        {
+          title: 'Private Domain Name',
         },
         null,
         {
