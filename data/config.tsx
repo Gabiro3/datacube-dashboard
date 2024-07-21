@@ -29,11 +29,11 @@ const siteConfig = {
       },
       {
         label: 'Login',
-        href: '/login',
+        href: 'https://iremeai.pythonanywhere.com/login',
       },
       {
         label: 'Sign Up',
-        href: '/signup',
+        href: 'https://iremeai.pythonanywhere.com/register',
         variant: 'primary',
       },
     ],
