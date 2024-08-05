@@ -8,10 +8,10 @@ export default {
       id: "oss",
       title: "Starter Plan",
       description: "Basic compoents, perfect to get started.",
-      price: <Text>500 RWF / Document</Text>,
+      price: <Text>Free</Text>,
       features: [
         {
-          title: "10 Documents Synthesis",
+          title: "5 Documents Synthesis",
         },
         {
           title: "Document Summarization",
@@ -30,18 +30,18 @@ export default {
         },
       ],
       action: {
-        href: "#",
+        href: "https://iremeai.pythonanywhere.com/register",
       },
     },
     {
       id: "bootstrap",
       title: "Professional Plan",
       description: "Complete document uploads and synthesis.",
-      price: <Text>20,000 RWF / month</Text>,
+      price: <Text>10,000 RWF / month</Text>,
       isRecommended: true,
       features: [
         {
-          title: "Up to 60 Document uploads",
+          title: "Up to 30 Document uploads",
         },
         {
           title: "Document Summarization",
@@ -50,7 +50,7 @@ export default {
           title: "20 AI queries per Doc",
         },
         {
-          title: "100 MBS Documents Storage",
+          title: "50 MBS Documents Storage",
         },
         {
           title: "Document Tags",
@@ -65,7 +65,7 @@ export default {
         },
       ],
       action: {
-        href: "https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license",
+        href: "https://iremeai.pythonanywhere.com/register",
       },
     },
     {
@@ -100,7 +100,7 @@ export default {
         },
       ],
       action: {
-        href: "https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Unlimited%20license",
+        href: "https://iremeai.pythonanywhere.com/register",
       },
     },
   ],

@@ -41,7 +41,7 @@ import {
   FiFileText,
   FiTrendingUp,
   FiUserPlus,
-  FiCloud
+  FiCloud,
 } from "react-icons/fi";
 import { Features } from "components/features";
 import { BackgroundGradient } from "components/gradients/background-gradient";
@@ -211,7 +211,8 @@ const HeroSection: React.FC = () => {
           {
             title: "Easy to Use",
             icon: FiSmile,
-            description: "Ireme is built with an intuitive and easy to use interface.",
+            description:
+              "Ireme is built with an intuitive and easy to use interface.",
             iconPosition: "left",
             delay: 0.6,
           },
@@ -226,8 +227,7 @@ const HeroSection: React.FC = () => {
           {
             title: "Composable",
             icon: FiGrid,
-            description:
-              "You can Ask Questions and get answers right away!",
+            description: "You can Ask Questions and get answers right away!",
             iconPosition: "left",
             delay: 1,
           },
@@ -254,58 +254,58 @@ const HighlightsSection = () => {
       <HighlightsItem colSpan={[1, null, 2]} title="Core components">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started with Ireme AI by <Em>Creating an Account</Em>.
-            After creating an account, you will be able to upload your own documents
-            to the platform, get AI-powered insights from them and <Em>ask questions about </Em> 
-             the information stored in them.
+            Get started with Ireme AI by <Em>Creating an Account</Em>. After
+            creating an account, you will be able to upload your own documents
+            to the platform, get AI-powered insights from them and{" "}
+            <Em>ask questions about </Em>
+            the information stored in them.
           </Text>
 
-              <HStack pt="4" pb="5" spacing="8">
-                <Image
-                  src="/static/images/ms-word-svgrepo-com.svg"
-                  layout="fixed"
-                  width={30}
-                  height={30}
-                  alt="Microsoft Word Logo svg"
-                  quality="75"
-                  priority
-                />
-                <Image
-                  src="/static/images/pdf-svgrepo-com.svg"
-                  layout="fixed"
-                  width={30}
-                  height={30}
-                  alt="Pdf logo svg"
-                  quality="75"
-                  priority
-                />
-                <Image
-                  src="/static/images/excel-svgrepo-com.svg"
-                  layout="fixed"
-                  width={30}
-                  height={30}
-                  alt="Microsoft Excel logo"
-                  quality="75"
-                  priority
-                />
-                <Image
-                  src="/static/images/ms-onenote-svgrepo-com.svg"
-                  layout="fixed"
-                  width={30}
-                  height={30}
-                  alt="Microsoft OneNote logo"
-                  quality="75"
-                  priority
-                />
-              </HStack>
-          
+          <HStack pt="4" pb="5" spacing="8">
+            <Image
+              src="/static/images/ms-word-svgrepo-com.svg"
+              layout="fixed"
+              width={30}
+              height={30}
+              alt="Microsoft Word Logo svg"
+              quality="75"
+              priority
+            />
+            <Image
+              src="/static/images/pdf-svgrepo-com.svg"
+              layout="fixed"
+              width={30}
+              height={30}
+              alt="Pdf logo svg"
+              quality="75"
+              priority
+            />
+            <Image
+              src="/static/images/excel-svgrepo-com.svg"
+              layout="fixed"
+              width={30}
+              height={30}
+              alt="Microsoft Excel logo"
+              quality="75"
+              priority
+            />
+            <Image
+              src="/static/images/ms-onenote-svgrepo-com.svg"
+              layout="fixed"
+              width={30}
+              height={30}
+              alt="Microsoft OneNote logo"
+              quality="75"
+              priority
+            />
+          </HStack>
         </VStack>
       </HighlightsItem>
       <HighlightsItem title="Solid foundations">
         <Text color="muted" fontSize="lg">
           We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most advanced and established AI tools in the scene to help
-          you get the most out of you documents.
+          selected the most advanced and established AI tools in the scene to
+          help you get the most out of you documents.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
@@ -314,7 +314,9 @@ const HighlightsSection = () => {
         avatar="/static/images/avatar.jpg"
         gradient={["pink.200", "purple.500"]}
       >
-        “Ireme AI helped me boost my productivity as a Software Developer. It allows me to quickly grasp the main points of developer guides, saving me time and effort in understanding new technologies.”
+        “Ireme AI helped me boost my productivity as a Software Developer. It
+        allows me to quickly grasp the main points of developer guides, saving
+        me time and effort in understanding new technologies.”
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
@@ -371,8 +373,7 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your average
-          AI docmaster.
+          Not your average AI docmaster.
         </Heading>
       }
       description={
@@ -425,8 +426,9 @@ const FeaturesSection = () => {
         {
           title: "Summarise.",
           icon: FiFileText,
-          description: "Summarise information in your documents and extract key information from them.",
-          
+          description:
+            "Summarise information in your documents and extract key information from them.",
+
           variant: "inline",
         },
       ]}
@@ -485,7 +487,7 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: "We are going live this July, Join Us 🚀",
+        title: "We are going live this August, Join Us 🚀",
         description:
           '<img src="https://cdn.prod.website-files.com/65e76a14af207274f46c7f0e/665dbf14c7f8d8e979b03ada_norrsken-logo-white.svg" width="88px" />',
         href: "https://github.com",
